@@ -13,7 +13,10 @@ This trimester I learned about the way I work, and how I struggle to manage my t
 
 I worked most on front-end this trimester, being responsible for our Passion Project's quizzes. I tried to help with the endpoints in backend, but it didn't make it in the final code. I also had many merge errors, which led to a lot of my code being left on my personal page. 
 
-Team Teaching
+# Frontend
+- 
+
+# Team Teaching
 - In our team teaching which was about Algorithms, I created 2 popcorn hacks and discussed Robot MCQ problems, and palindromes.
 - I got the opportunity to share the knowledge I gained
  
