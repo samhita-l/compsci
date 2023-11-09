@@ -13,12 +13,35 @@ This trimester I learned about the way I work, and how I struggle to manage my t
 
 I worked most on front-end this trimester, being responsible for our Passion Project's quizzes. I tried to help with the endpoints in backend, but it didn't make it in the final code. I also had many merge errors, which led to a lot of my code being left on my personal page. 
 
-# Frontend
-- 
+# Psuedo Code
+- MOVE_FORWARD()
+- ROTATE_LEFT
+- ROTATE_RIGHT
+- CAN_MOVE(direction)
 
 # Team Teaching
 - In our team teaching which was about Algorithms, I created 2 popcorn hacks and discussed Robot MCQ problems, and palindromes.
 - I got the opportunity to share the knowledge I gained
+
+# College Board MCQ
+
+- Which of the following would be the best use of citizen science?
+
+Responses
+
+An experiment that requires all participants to be working in the same laboratory
+
+An experiment that requires expensive equipment to conduct
+
+An experiment that requires data measurements to be taken in many different locations
+
+An experiment that requires specialized knowledge and training to conduct
+
+I needed to search up what an  Internet Engineering Task Force was and I learned that it is for developing standards and protocols for Internet communication
+
+I learned that the correct description of one of the benefits of using an iterative and incremental process of program development is:
+
+It helps programmers identify errors as components are added to a working program.
  
 # Future Plans
 
