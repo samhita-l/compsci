@@ -3,7 +3,7 @@ toc: True
 comments: False
 layout: post
 title: Routing and Computing
-description: 
+description: Team teaching on routing and computing
 type: hacks
 courses: {'compsci': {'week': 15}}
 ---
