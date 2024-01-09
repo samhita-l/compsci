@@ -134,10 +134,20 @@ Data Privacy and Security:
 
 1. Describe the key differences between the Creative Commons Zero v1.0 Universal, Open Source MIT License, and Open Source GPL License.
 
+In distinguishing the licenses, Creative Commons Zero v1.0 Universal is for creative works, allowing creators to waive all copyright and related rights. The Open Source MIT License, mainly used for software, allows users to do anything with the software as long as the original copyright notice is noted. However, the Open Source GPL License for software requires that any work taken from another source must also be open source under GPL.
+
+
 2. Give examples that illustrate how companies, such as Qualcomm and Red Hat, have leveraged Open Source licenses to establish unique business models.
 
+Examining companies leveraging open source licenses, Qualcomm contributes to open source projects such as the Linux kernel, ensuring compatibility and collaboration within the open-source community. Red Hat, on the other hand, is renowned for its enterprise Linux distribution and sustains its business model through support contracts and services.
+
+
 3. Why are businesses that heavily rely on Open Source software still need to generate income and how they manage this within the constraints of Open Source licenses.
+
+For businesses relying heavily on open source software, income generation is achieved through various strategies. This includes providing support and consulting services, implementing subscription models with additional features, adopting dual licensing approaches offering both open source and commercial licenses, delivering custom development and integration services, offering hosting and cloud services with managed options, and controlling trademarks and branding for specific commercial uses. These approaches allow companies to contribute to the open source community while sustaining their businesses.
 
 # <span style="color:cadetblue">Extra Credit</span>
 
 Explain the significance of choosing an appropriate license for personal and team GitHub repositories, especially for the CPT project. How does this relate to the broader themes of legal and ethical concerns in computing?
+
+Selecting the appropriate license for personal and team GitHub repositories, particularly the CPT project, is important for both legal and ethical reasons in computing. Legally, it protects the project by defining usage parameters, ensuring open source compliance, and addressing licensing compatibility. Ethically, the chosen license reflects the project's commitment to transparency, inclusivity, and community trust. It showcases a fair environment, recognizing contributors and establishing principles of user empowerment. In the broader themes of computing, this decision lays the groundwork for responsible and ethical software development.
