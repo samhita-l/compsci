@@ -197,19 +197,20 @@ Please answer all of these questions on your personal blog and **explain**. Don'
 #### IP Addresses
 1. Which of the following IP Addresses are possible? Explain (yes/no) for each answer choice.
 <br>
- - 1.1.1.1.1 No. IP addresses consist of four octets (numbers between 0 and 255)
- - 23.23.23.23 Yes. It follows the correct format for an IPv4 address.
- - 134.492.100.0 No. The second octet should be between 0 and 255.
- - 255.256.55.255 No. The third octet should be between 0 and 255.
- - 2.93.255.19 Yes. It follows the correct format for an IPv4 address.
+1.1.1.1.1: no, ip adresses have 4 octests not 5
+23.23.23.23: yes, this is possinle beacese there are 4 coctets and they are in the range of 0-225
+134.492.100.0: no because 492 is greater than 256
+255.256.55.255: No, because 256 isn’t a possible value for a subnet mask
+2.93.255.19: yes this works
 
 2. If Dian Du is at home on his home network and sends a message to every computer on the network, what is this an example of? Explain. 
 <br>
 - Multicast
 - Unicast
 - Broadcast
+Broadcast. A multicast is controlling the suers for which you send the data packet while a unicast is sending something to one person. If you want a message to go out to everyone on a particular network/bandwith, you would use broadcasting.
 
-Dian Du's message to every computer on his home network is an example of broadcasting. Broadcasting sends data to all devices in the network.
+
 
 #### Models
 1. Three of the four following protocols are on the same layer. Identify which ones and what layer they are on, and why they are on each layer:
@@ -218,30 +219,38 @@ Dian Du's message to every computer on his home network is an example of broadca
     - TLS (see HTTPS section) Transport layer. It provides secure communication over a computer network.
     - USB (permits data exchange between electronics) Physical layer. It defines the cables, connectors, and electrical signals.
 
+The ASCII regulats what the user cna see, therefore is present on the presentation layer. FTP is on the application layer since it is overseeign the transfer of material bewteen one divice and another. The TLS or HTTP looks at the rules for transferign material acrosss divices. THe UBS however is on another level since it deals witht eh physical matter of trasnfereing things.
 
 
 2. Telnet is a internet protocol which allows remote access to other computers over a local network or the internet. What layer of the OSI model would this protocol be located on? What is the function of this layer?
 
-Telnet is located at the application layer of the OSI model. This layer is responsible for providing network services directly to end-users or applications.
+It is on layer 7 or the application model. The reason for this is due to the fact that it helps for the transfereing of information. THe application layer is facilitated with resource sharing and other methods of applying such effects.
+
+
 
 
 #### DNS
 
 1. Bob wants to use the domain bob.is.the.best.com. What domain should he buy from a DNS provider (assume it is available)? What would be the subdomains?
-Bob should buy the domain best.com from a DNS provider. Subdomains could include bob.is.the.
+Bob should buy the domain best.com from a DNS provider. Subdomains could include bob.is.the. or anything after bob
 
 
 
 #### HTTP and HTTPS
-1. What is a difference between HTTP and HTTPS?   HTTPS is secure, using SSL/TLS to encrypt the connection, while HTTP is not secure.
+1. What is a difference between HTTP and HTTPS?   
 <br>
- - What protocol does HTTPS use that HTTP doesn't? HTTPS uses SSL/TLS; HTTP does not.
+ - What protocol does HTTPS use that HTTP doesn't? 
+ HTTP (Hypertext Transfer Protocol) is unencrypted, making data transmission vulnerable to interception. HTTPS (Hypertext Transfer Protocol Secure) uses SSL/TLS encryption for a secure and private connection, ensuring the confidentiality and integrity of data. The key difference is the level of security, with HTTPS providing protection against potential eavesdropping and tampering of information during transmission.
+
+
 
 2. Last trimester we sent HTTP requests for our passion projects
 <br>
  - Did we use HTTP or HTTPS?
  - What are the benefits and disadvantages of this?
-We used HTTPS because it has more security
+We used https. The level of security is higher in HTTPS and prevents people from being able to tamper with the code as easily. The disadvantage of thsi is that they are very costly and can be very slow, increasing the stress on servers.
+
+
 
 #### TCP and UDP
 
@@ -250,11 +259,17 @@ We used HTTPS because it has more security
  - What protocol should he use, TCP or UDP? Why? For real-time video streaming, Bob should use UDP. It is faster but lacks error checking.
 
  - What are some cons of this protocol? Give an example of a potential issue. Potential issues include packet loss and out-of-order delivery. 
+ EH shoudl use UDP because it is faster, which means less lagging will occur. A con is that the ACK message may not be sent or the packets may be sent out at once. This sould cause the video to completely break in the middle and malfunction. ALso if the server doesn’t acknowledge a connection between the computer and itself, the data could be lost and the computer would ne doing more work than it needed too.
+
+
 
 
 2. TCP has error checking, which ensures that all packets arrive properly. Why is this important? TCP's error checking ensures reliable data transmission.
 <br>
  - Give an example of how TCP ensures that there are no errors. If a packet is not acknowledged, TCP will resend it.
+ TCP uses ACK to ensure that all the packets arrived. It sends onyl 3 packets at a time, so if a packet is missing, the computer will know and it will resend the segments. Then the 3 segments will get sent again and the computer needs to respond with an ACK to confirm that the packets were sent correctly.
+
+
 
 
 3. Server A computer is communicating with Server B. They have already initiated communication and Server A is now attempting to send data to Server B.
@@ -264,61 +279,10 @@ We used HTTPS because it has more security
  - What is another use of this?
  Ensuring data integrity in critical applications.
 
- IP Addresses
-Which of the following IP Addresses are possible? Explain (yes/no) for each answer choice.
-1.1.1.1.1: no, ip adresses have 4 octests not 5
-23.23.23.23: yes, this is possinle beacese there are 4 coctets and they are in the range of 0-225
-134.492.100.0: no because 492 is greater than 256
-255.256.55.255: No, because 256 isn’t a possible value for a subnet mask
-2.93.255.19: yes this works
-If Dian Du is at home on his home network and sends a message to every computer on the network, what is this an example of? Explain.
-Multicast
-Unicast
-Broadcast
-Broadcast. A multicast is controllign the suers for which you send the data packet while a unicast is sendign somethign to one person. If you want a message to go out to everyone on a particular network/bandwith, you would use broadcasting.
-
-Models
-Three of the four following protocols are on the same layer. Identify which ones and what layer they are on, and why they are on each layer:
-ASCII (see above for information)
-FTP (facilitates transfer of files over the internet)
-TLS (see HTTPS section)
-USB (permits data exchange between electronics)
-The ASCII regulats what the user cna see, therefore is present on the presentation layer. FTP is on the application layer since it is overseeign the transfer of material bewteen one divice and another. The TLS or HTTP looks at the rules for transferign material acrosss divices. THe UBS however is on another level since it deals witht eh physical matter of trasnfereing things.
-
-When going by the TCP model, UBS would be the one out of place.
-
-Telnet is a internet protocol which allows remote access to other computers over a local network or the internet. What layer of the OSI model would this protocol be located on? What is the function of this layer?
-It is on layer 7 or the application model. The reason for this is due to the fact that it helps for the transfereing of information. THe application layer is facilitated with resource sharing and other methods of applying such effects.
-
-DNS
-Bob wants to use the domain bob.is.the.best.com. What domain should he buy from a DNS provider (assume it is available)? What would be the subdomains?
-The subdomian caould be anything sfter bob. HE should by second level and top level domains.
-
-HTTP and HTTPS
-What is a difference between HTTP and HTTPS?
-What protocol does HTTPS use that HTTP doesn’t?
-HTTP (Hypertext Transfer Protocol) is unencrypted, making data transmission vulnerable to interception. HTTPS (Hypertext Transfer Protocol Secure) uses SSL/TLS encryption for a secure and private connection, ensuring the confidentiality and integrity of data. The key difference is the level of security, with HTTPS providing protection against potential eavesdropping and tampering of information during transmission.
-
-Last trimester we sent HTTP requests for our passion projects.
-Did we use HTTP or HTTPS?
-What are the benefits and disadvantages of this?
-we used https. THe level of security is higher in HTTPS and prevents people from ebign able to tamper with the code as easily. The disadvantage of thsi is that they are very costly and can be very slow, increasign the stree on servers.
-
-TCP and UDP
-Bob is setting up a video streaming service, and he needs the stream to be real time.
-What protocol should he use, TCP or UDP? Why?
-What are some cons of this protocol? Give an example of a potential issue.
-EH shoudl use UDP because it is faster, which means less lagging will occur. A con is that the ACK message may not be sent or the packets may be sent out at once. This sould cause the video to completely break in the middle and malfunction. ALso if the server doesn’t acknowledge a connection between the computer and itself, the data could be lost and the computer would ne doing more work than it needed too.
-
-TCP has error checking, which ensures that all packets arrive properly. Why is this important?
-Give an example of how TCP ensures that there are no errors.
-TCP uses ACK to ensure that all the packets arrived. It sends onyl 3 packets at a time, so if a packet is missing, the computer will know and it will resend the segments. Then the 3 segments will get sent again and the computer needs to respond with an ACK to confirm that the packets were sent correctly.
-
-Server A computer is communicating with Server B. They have already initiated communication and Server A is now attempting to send data to Server B.
-How does Server B ensure that they have received any sent packets before Server A continues sending packets in TCP? In UDP?
-What is another use of this?
 Server B needs to send a message to server A. This message is knonwn as an ACK. Then server A will continue to send to remaining packets. –> TCP
 
 In UDP, the server can send packets even if there isn’t any acknowledgement of a connection. There are no ACK message and no to little data checking. Packets acan slso come out of order and have missing packets. UDP also sends all of its packets at once.
 
 The reason for comparin the two is to show the reliability of the two even though UDP is proved to be cost reductive and faster.
+
+
